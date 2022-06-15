@@ -1,0 +1,12 @@
+[
+  {
+    "date": "20220402",
+    "title": "Un article de test",
+    "slug": "test"
+  },
+  {
+    "date": "20220404",
+    "title": "Cet blogpost vient du futur",
+    "slug": "futur-article"
+  }
+]
