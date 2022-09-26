@@ -25,7 +25,7 @@ const socialLinks = [
 </script>
 
 <template>
-  <div class="flex flex-row justify-center items-end flex-grow pb-4">
+  <div class="flex flex-row justify-center items-end pb-4">
     <SocialLink
       v-for="(social, index) in socialLinks"
       :key="`social_${index}`"
