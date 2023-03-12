@@ -3,11 +3,6 @@
     <div class="relative">
       <img
         class="block w-40 h-40 md:w-96 md:h-96 object-cover rounded-full mb-4"
-        src="/images/face2.webp"
-        alt="Ma tronche de cake"
-      />
-      <img
-        className="block w-40 h-40 md:w-96 md:h-96 object-cover rounded-full mb-4 absolute top-0 left-0 hover:opacity-25 transition-opacity duration-1000 ease-out"
         src="/images/face3.webp"
         alt="Ma tronche de cake"
       />
