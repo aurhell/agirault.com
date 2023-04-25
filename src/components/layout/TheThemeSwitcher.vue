@@ -23,36 +23,32 @@ function applyLight() {
 function switchTheme() {
   if (state.theme === DARK) {
     applyLight()
-  } else {
+  }
+  else {
     applyDark()
   }
 }
 
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
 if (
-  localStorage.getItem(THEME) === DARK ||
-  (!(THEME in localStorage) &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches)
+  localStorage.getItem(THEME) === DARK
+  || (!(THEME in localStorage)
+    && window.matchMedia('(prefers-color-scheme: dark)').matches)
 ) {
   applyDark()
-} else {
+}
+else {
   applyLight()
 }
 </script>
 
 <template>
   <button type="button" @click="switchTheme()">
-    <Icon v-if="state.theme === DARK" icon="carbon:light" class="theme-btn" />
+    <Icon v-if="state.theme === DARK" icon="carbon:light" class="h-7 w-7 text-sky-900 transition duration-300 hover:text-sky-700 dark:text-yellow-500 dark:hover:text-yellow-300" />
     <Icon
       v-else-if="state.theme === LIGHT"
       icon="bxs:moon"
-      class="theme-btn"
+      class="h-7 w-7 text-sky-900 transition duration-300 hover:text-sky-700 dark:text-yellow-500 dark:hover:text-yellow-300"
     />
   </button>
 </template>
-
-<style scoped>
-.theme-btn {
-  @apply w-7 h-7 text-sky-900 hover:text-sky-700 dark:text-yellow-500 dark:hover:text-yellow-300 transition duration-300;
-}
-</style>

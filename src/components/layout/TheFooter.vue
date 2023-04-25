@@ -1,6 +1,4 @@
 <script setup>
-import SocialLink from '@/components/SocialLink.vue'
-
 const socialLinks = [
   {
     icon: 'mdi-linkedin',
@@ -25,7 +23,7 @@ const socialLinks = [
 </script>
 
 <template>
-  <div class="flex flex-row justify-center items-end pb-4">
+  <div class="flex flex-row items-end justify-center pb-4">
     <SocialLink
       v-for="(social, index) in socialLinks"
       :key="`social_${index}`"

@@ -1,6 +1,4 @@
 <script setup>
-import TheThemeSwitcher from '@/components/layout/TheThemeSwitcher.vue'
-
 const menuItems = [
   // {
   //   name: 'Blog',
@@ -14,20 +12,19 @@ const menuItems = [
 </script>
 
 <template>
-  <div class="flex flex-row pt-4 pr-4 justify-end items-center">
+  <div class="flex flex-row items-center justify-end pr-4 pt-4">
     <a
       v-for="(menu, index) in menuItems"
       :key="`menu_${index}`"
       class="
-        text-slate-700
-        hover:text-slate-500
-        dark:text-white dark:hover:text-slate-300
-        hover:underline hover:underline-offset-4
-        transition-colors
-        duration-600
-        text-xl
-        uppercase
         mx-2
+        text-xl uppercase
+        text-slate-700 transition-colors
+        hover:text-slate-500
+        hover:underline
+        hover:underline-offset-4
+        dark:text-white
+        dark:hover:text-slate-300
       "
       :href="menu.url"
     >
