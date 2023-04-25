@@ -8,7 +8,7 @@
       :delay="300"
     >
       <img
-        class="mb-4 block h-40 w-40 rounded-full object-cover md:h-96 md:w-96"
+        class="mb-4 block h-40 w-40 rounded-full object-cover md:h-96 md:w-96 landscape:h-40 landscape:w-40 landscape:lg:h-96 landscape:lg:w-96"
         src="/images/face3.webp"
         alt="Ma tronche de cake"
       >
