@@ -27,6 +27,8 @@ const socialLinks = [
     <SocialLink
       v-for="(social, index) in socialLinks"
       :key="`social_${index}`"
+      v-motion-slide-bottom
+      :delay="1200 + index * 100"
       :icon="social.icon"
       :original-color="social.originalColor"
       :url="social.url"
